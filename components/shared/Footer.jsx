@@ -8,7 +8,7 @@ const Footer = () => {
   const d = new Date();
   let year = d.getFullYear();
   return (
-    <Wrapper id="contact" style="py-16 min-h-[100vh]">
+    <Wrapper id="contact" style="py-16 lg:min-h-[100vh]">
       <footer className="w-full flex flex-col items-center justify-start gap-10">
         <Heading text="Follow Us" />
         <div className="w-full flex items-center justify-center gap-8">

@@ -30,6 +30,7 @@ canvas {
 
 .outlinedText {
     font-size: 40px;
+    text-align: left;
     font-weight: 700;
     position: relative;
     color: transparent;

@@ -16,7 +16,7 @@ const TimeLine = () => {
     <div className="w-full">
       <Timeline position={matches ? "alternate" : "right"}>
         <TimelineItem className="flex items-center justify-start gap-6">
-          <TimelineSeparator className="h-[350px]">
+          <TimelineSeparator className="md:h-[350px] h-[370px]">
             <TimelineDot />
             <TimelineConnector className="" />
           </TimelineSeparator>
@@ -26,7 +26,7 @@ const TimeLine = () => {
           />
         </TimelineItem>
         <TimelineItem className="flex items-center justify-start gap-6">
-          <TimelineSeparator className="h-[350px]">
+          <TimelineSeparator className="md:h-[350px] h-[370px]">
             <TimelineDot />
             <TimelineConnector className="" />
           </TimelineSeparator>
@@ -36,7 +36,7 @@ const TimeLine = () => {
           />
         </TimelineItem>
         <TimelineItem className="flex items-center justify-start gap-6">
-          <TimelineSeparator className="h-[350px]">
+          <TimelineSeparator className="md:h-[350px] h-3720px]">
             <TimelineDot />
             <TimelineConnector className="" />
           </TimelineSeparator>

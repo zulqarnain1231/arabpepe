@@ -7,9 +7,9 @@ import Cube from "./Cube";
 
 const LearnMore = () => {
   return (
-    <Wrapper id="learnMore" style="py-16 min-h-[100vh]">
+    <Wrapper id="learnMore" style="py-16 lg:min-h-[100vh]">
       <div className="w-full h-full grid lg:grid-cols-2 gap-8 md:gap-2 lg:gap-8">
-        {/* <div className="w-full">
+        <div className="w-full md:inline-block hidden">
             <Canvas
               className="w-full h-[400px]"
               camera={{ position: [5, 5, 5], fov: 25 }}
@@ -21,7 +21,7 @@ const LearnMore = () => {
                 <OrbitControls enableZoom={false} autoRotate />
               </Suspense>
             </Canvas>
-          </div> */}
+          </div>
 
         <Tokenomics />
       </div>
