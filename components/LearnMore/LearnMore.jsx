@@ -8,20 +8,20 @@ import Cube from "./Cube";
 const LearnMore = () => {
   return (
     <Wrapper id="learnMore" style="py-16 lg:min-h-[100vh]">
-      <div className="w-full h-full grid lg:grid-cols-2 gap-8 md:gap-2 lg:gap-8">
-        <div className="w-full md:inline-block hidden">
-            <Canvas
-              className="w-full h-[400px]"
-              camera={{ position: [5, 5, 5], fov: 25 }}
-            >
-              <Suspense fallback={null}>
-                <ambientLight intensity={0.5} />
-                <directionalLight position={[3, 2, 1]} />
-                <Cube />
-                <OrbitControls enableZoom={false} autoRotate />
-              </Suspense>
-            </Canvas>
-          </div>
+      <div className="w-full h-full grid lg:grid-cols-2 gap-8 md:gap-2 lg:gap-8 overflow-hidden">
+        <div className="w-full overflow-hidden">
+          <Canvas
+            className="w-full h-[400px]"
+            camera={{ position: [5, 5, 5], fov: 25 }}
+          >
+            <Suspense fallback={null}>
+              <ambientLight intensity={0.5} />
+              <directionalLight position={[3, 2, 1]} />
+              <Cube />
+              <OrbitControls enableZoom={false} autoRotate />
+            </Suspense>
+          </Canvas>
+        </div>
 
         <Tokenomics />
       </div>

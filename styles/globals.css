@@ -57,6 +57,11 @@ canvas {
 }
 
 
+/* styles for mui timeline */
+.MuiTimeline-root .MuiTimeline-positionAlternate{
+  width: 100%!important;  
+  display: flex!important;
+}
 @keyframes fillText {
     to {
         width: 100%;

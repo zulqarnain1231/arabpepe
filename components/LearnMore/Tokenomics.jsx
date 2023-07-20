@@ -10,41 +10,46 @@ const Tokenomics = () => {
   const { tokenList } = Data.Tokenomics;
 
   return (
-    <div className="w-full flex flex-col items-center md:items-start justify-start gap-6">
-      <Heading text="Tokenomics" />
-      {tokenList.map((item, index) => {
-        return (
-          <div
-            key={index}
-            className="w-full flex items-center justify-start gap-4"
-          >
-            <TbSquareRoundedChevronRightFilled className="text-white-main h-[24px] w-[24px]" />
-            <Text text={`${item.title}:`} style="text-brand-main font-[500]" />
-            {item.link ? (
-              <div className="flex items-center justify-start gap-2">
-                <a className="text-white-main font-[400]" href={item.link}>
-                  {item.text}
-                </a>
-                <BsArrowUpRight className="text-white-main h-[16px] w-[16px]" />
-              </div>
-            ) : (
-              <Text text={item.text} />
-            )}
-          </div>
-        );
-      })}
+    <div className="w-full flex items-center justify-center">
+      <div className="w-full flex flex-col items-center lg:items-start justify-start gap-6">
+        <Heading text="Tokenomics" />
+        {tokenList.map((item, index) => {
+          return (
+            <div
+              key={index}
+              className="w-full flex items-center justify-start gap-4"
+            >
+              <TbSquareRoundedChevronRightFilled className="text-white-main h-[24px] w-[24px]" />
+              <Text
+                text={`${item.title}:`}
+                style="text-brand-main font-[500]"
+              />
+              {item.link ? (
+                <div className="flex items-center justify-start gap-2">
+                  <a className="text-white-main font-[400]" href={item.link}>
+                    {item.text}
+                  </a>
+                  <BsArrowUpRight className="text-white-main h-[16px] w-[16px]" />
+                </div>
+              ) : (
+                <Text text={item.text} />
+              )}
+            </div>
+          );
+        })}
 
-      <Text
-        text="The official contract address
+        <Text
+          text="The official contract address
         for $APEPE token is"
-      />
-      <a
-        href="https://bscscan.com/token/0x463464927671a2e8d406A1a3E64093D42a181C44"
-        className="font-[400] text-[16px] text-brand-main"
-      >
-        0x463464927671a2e8d406A1a3E64093D42a181C44
-      </a>
-      <FilledButton text="How to Pay" link="#howToPay" />
+        />
+        <a
+          href="https://bscscan.com/token/0x463464927671a2e8d406A1a3E64093D42a181C44"
+          className="font-[400] sm:text-[16px] text-[14px] text-brand-main text-center"
+        >
+          0x463464927671a2e8d406A1a3E64093D42a181C44
+        </a>
+        <FilledButton text="How to Pay" link="#howToPay" />
+      </div>
     </div>
   );
 };

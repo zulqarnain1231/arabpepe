@@ -8,15 +8,15 @@ import TimelineDot from "@mui/lab/TimelineDot";
 import { useTheme, useMediaQuery } from "@mui/material";
 import MapCard from "./MapCard";
 import Data from "../../constants/Json/Dummy.json";
-
+ 
 const TimeLine = () => {
   const theme = useTheme();
-  const matches = useMediaQuery(theme.breakpoints.up("lg"));
+  const matches = useMediaQuery(theme.breakpoints.up("md"));
   return (
-    <div className="w-full">
+    <div className="w-full flex items-center justify-center">
       <Timeline position={matches ? "alternate" : "right"}>
         <TimelineItem className="flex items-center justify-start gap-6">
-          <TimelineSeparator className="md:h-[350px] h-[370px]">
+          <TimelineSeparator className="md:h-[350px] h-[370px] flex items-start">
             <TimelineDot />
             <TimelineConnector className="" />
           </TimelineSeparator>
