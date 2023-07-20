@@ -7,7 +7,7 @@ import OutlinedButton from "./shared/Buttons/OutlinedButton";
 const Hero = () => {
   return (
     <Wrapper id="hero">
-      <div className="w-full flex flex-col items-center justify-start lg:grid lg:grid-cols-[1.5fr,1fr] gap-10 py-8">
+      <div className="w-full flex flex-col-reverse items-center justify-start lg:grid lg:grid-cols-2 gap-10 py-8">
         <div className="h-full w-full flex flex-col lg:items-start items-center justify-center gap-8">
           <h1 className="md:text-[56px] sm:text-[46px] bg-gradient-to-r from-white-main to-brand-main inline-block bg-clip-text text-transparent text-center text-[40px] font-[600] md:whitespace-nowrap">
             Welcome to ArabPepe!
@@ -27,7 +27,8 @@ const Hero = () => {
             <OutlinedButton text="Lite Paper(Soon)" link="/" />
           </div>
         </div>
-        <div className="relative md:h-[500px]  h-[400px] w-full">
+        <div className="w-full flex items-center justify-center">
+        <div className="relative md:h-[500px] sm:w-[500px] w-full  h-[400px] ">
           <Image
             className="h-full w-full bounce"
             src={"/Assets/hero.png"}
@@ -35,6 +36,8 @@ const Hero = () => {
             fill
           />
         </div>
+        </div>
+        
       </div>
     </Wrapper>
   );

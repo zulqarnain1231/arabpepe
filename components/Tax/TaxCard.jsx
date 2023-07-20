@@ -6,7 +6,7 @@ import FilledButton from "../shared/Buttons/FilledButton";
 
 const TaxCard = ({ title, amount }) => {
   return (
-    <div className=" lg:w-[400px] md:w-[350px] w-full flex flex-col items-center justify-center gap-10 bg-[#ffffff]/20 backdrop-blur-[5px] rounded-[12px] p-4">
+    <div className=" lg:w-[400px] md:w-[350px] w-full flex flex-col items-center justify-center gap-10 bg-[#ffffff]/20 backdrop-blur-[5px] rounded-[12px] border-[2px] border-brand-secondary p-4">
       <p className="text-white-main font-bold text-[28px]">{title}</p>
       <Text
         text="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore

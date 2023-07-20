@@ -104,9 +104,9 @@ const Navbar = () => {
               );
             })}
             <FilledButton
-              event={toggleDrawer}
               text="Buy $APEPE on PCS"
               link="/"
+              style="px-5 h-[46px]"
             />
           </div>
         </Drawer>

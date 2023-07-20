@@ -10,7 +10,7 @@ module.exports = {
       colors: {
         brand: {
           main: "#DA4EA2",
-    
+          secondary: "#c7127f",
         },
         white: {
           main: "#FFFFFF",
@@ -26,7 +26,6 @@ module.exports = {
         auth: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
         secondary: "rgba(0, 0, 0, 0.1) 0px 10px 30px",
       },
-
     },
   },
 
