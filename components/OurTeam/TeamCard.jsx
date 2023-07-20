@@ -2,16 +2,11 @@ import React from "react";
 import { BiLogoLinkedin } from "react-icons/bi";
 import Image from "next/image";
 
-const TeamCard = ({name,role,picture}) => {
+const TeamCard = ({ name, role, picture }) => {
   return (
     <div className=" md:w-[350px] w-full flex flex-col items-center justify-center gap-10 bg-[#ffffff]/20 backdrop-blur-[5px] rounded-[12px] border-[2px] border-brand-secondary p-4">
       <div className="relative h-[150px] w-[150px] rounded-full">
-        <Image
-          className="rounded-full"
-          src={picture}
-          alt=""
-          fill
-        />
+        <Image className="rounded-full" src={picture} alt="" fill />
       </div>
       <div className="w-full flex flex-col items-center justify-start gap-3">
         <p className=" bg-gradient-to-r from-white-main to-brand-main inline-block bg-clip-text text-transparent font-bold text-[28px]">

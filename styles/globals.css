@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @tailwind base;
-@tailwind components;
+@tailwind components; 
 @tailwind utilities;
 
 .backgroundGradient {
@@ -9,8 +9,8 @@
 }
 
 .backgroundGradientLeftToRight {
-    background: rgb(2, 1, 7);
-    background: linear-gradient(327deg, rgba(2, 1, 7, 1) 7%, rgba(42, 6, 94, 1) 51%);
+    background: rgb(2,0,36);
+    background: linear-gradient(338deg, rgba(2,0,36,1) 2%, rgba(42,6,94,1) 30%);
 }
 
 .bg_gradient {

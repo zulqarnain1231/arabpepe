@@ -6,22 +6,22 @@ import { Canvas } from "@react-three/fiber";
 import Cube from "./Cube";
 
 const LearnMore = () => {
-  return ( 
-    <Wrapper id="learnMore" style="py-16">
-      <div className="w-full h-full grid md:grid-cols-2 gap-8 md:gap-2 lg:gap-8">
-        <div className="w-full">
-          <Canvas
-            className="w-full h-[400px]"
-            camera={{ position: [5, 5, 5], fov: 25 }}
-          >
-            <Suspense fallback={null}>
-              <ambientLight intensity={0.5} />
-              <directionalLight position={[3, 2, 1]} />
-              <Cube />
-              <OrbitControls enableZoom={false} autoRotate />
-            </Suspense>
-          </Canvas>
-        </div>
+  return (
+    <Wrapper id="learnMore" style="py-16 min-h-[100vh]">
+      <div className="w-full h-full grid lg:grid-cols-2 gap-8 md:gap-2 lg:gap-8">
+        {/* <div className="w-full">
+            <Canvas
+              className="w-full h-[400px]"
+              camera={{ position: [5, 5, 5], fov: 25 }}
+            >
+              <Suspense fallback={null}>
+                <ambientLight intensity={0.5} />
+                <directionalLight position={[3, 2, 1]} />
+                <Cube />
+                <OrbitControls enableZoom={false} autoRotate />
+              </Suspense>
+            </Canvas>
+          </div> */}
 
         <Tokenomics />
       </div>

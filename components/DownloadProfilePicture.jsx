@@ -8,7 +8,7 @@ const DownloadProfilePicture = () => {
   return (
     <Wrapper id="downloadProfilePicture" style="py-16">
       <div className="w-full flex flex-col items-center justify-start gap-10">
-        <Heading text="Download your new profile pictures :)" />
+        <Heading text="Download your new profile pictures :)" style={"text-center"} />
         <div className="w-full flex md:flex-row flex-col items-center justify-center gap-8">
           {Data.downloadProfilePics.pics.map((item, index) => {
             return (

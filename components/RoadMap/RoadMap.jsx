@@ -10,11 +10,11 @@ import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import MapCard from "./MapCard";
 import Data from "../../constants/Json/Dummy.json";
-
+ 
 const RoadMap = () => {
   return (
     <Wrapper id="roadMap" style="py-16">
-      <div className="w-full flex flex-col md:items-center items-start justify-start gap-10">
+      <div className="w-full flex flex-col items-center justify-start gap-10">
         <Heading text="Road Map" />
         <div className="w-full">
           <Timeline position="alternate">

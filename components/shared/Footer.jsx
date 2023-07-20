@@ -8,10 +8,10 @@ const Footer = () => {
   const d = new Date();
   let year = d.getFullYear();
   return (
-    <Wrapper id="contact" style="py-16">
-      <footer className="w-full flex flex-col md:items-center items-start justify-start gap-10">
+    <Wrapper id="contact" style="py-16 min-h-[100vh]">
+      <footer className="w-full flex flex-col items-center justify-start gap-10">
         <Heading text="Follow Us" />
-        <div className="w-full flex items-center md:justify-center justify-start gap-8">
+        <div className="w-full flex items-center justify-center gap-8">
           <div className="h-[70px] w-[70px] flex items-center justify-center rounded-full bg-white-main">
             <BsTwitter className="h-[36px] w-[36px]" />
           </div>

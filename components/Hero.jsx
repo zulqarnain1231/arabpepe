@@ -22,7 +22,7 @@ const Hero = () => {
             </p>
           </div>
 
-          <div className="w-full flex sm:flex-row flex-col items-center justify-center lg:justify-start gap-10">
+          <div className="w-full flex sm:flex-row flex-col items-center justify-center lg:justify-start gap-4 md:gap-10">
             <FilledButton text="Learn More" link="#learnMore" />
             <OutlinedButton text="Lite Paper(Soon)" link="/" />
           </div>

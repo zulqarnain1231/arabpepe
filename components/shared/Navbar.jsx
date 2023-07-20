@@ -35,7 +35,7 @@ const Navbar = () => {
     <Wrapper id="navbar" style="h-[70px]">
       <nav className="w-full h-full flex items-center justify-between bg-transparent">
         <div className="h-full flex items-center justify-start gap-10">
-          <Link href={"/"} className="w-[46px] h-[46px] rounded-full relative">
+          <Link href={"/"} className="w-[54px] h-[54px] rounded-full relative">
             <Image
               className="rounded-full"
               src={"/Assets/logo.png"}
@@ -51,13 +51,13 @@ const Navbar = () => {
               <Link
                 href={`${item.route}`}
                 key={index}
-                className="font-[400] text-[16px] text-white-main md:inline-block hidden relative after:content-[''] after:absolute after:w-0 after:left-0 after:bottom-0 after:h-[2px] after:bg-white-main hover:after:w-full hover:after:duration-300 "
+                className="font-[400] text-[16px] text-white-main lg:inline-block hidden relative after:content-[''] after:absolute after:w-0 after:left-0 after:bottom-0 after:h-[2px] after:bg-white-main hover:after:w-full hover:after:duration-300 "
               >
                 {item.name}
               </Link>
             );
           })}
-          <div className="h-full md:flex items-center justify-center hidden">
+          <div className="h-full lg:flex items-center justify-center hidden">
             <FilledButton
               text="Buy $APEPE on PCS"
               link="/"
@@ -66,7 +66,7 @@ const Navbar = () => {
           </div>
 
           <AiOutlineMenu
-            className="md:hidden inline-block h-[26px] w-[26px] text-white-main"
+            className="lg:hidden inline-block h-[26px] w-[26px] text-white-main"
             onClick={toggleDrawer}
           />
         </div>
@@ -86,10 +86,12 @@ const Navbar = () => {
           }}
         >
           <div className="w-full h-full flex flex-col items-center justify-center gap-[50px] relative">
-            <RxCross1
-              onClick={toggleDrawer}
-              className="absolute right-4 top-4 h-[24px] w-[24px] text-white-main"
-            />
+            <div className="w-[36px] h-[36px] flex items-center justify-center bg-white-main rounded-full absolute right-4 top-4">
+              <RxCross1
+                onClick={toggleDrawer}
+                className=" text-brand-secondary h-[20px] w-[20px]"
+              />
+            </div>
 
             {menu.map((item, index) => {
               return (

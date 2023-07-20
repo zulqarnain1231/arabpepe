@@ -2,7 +2,7 @@ import React from "react";
 import Text from "../shared/Typography/Text";
 import { TbSquareRoundedChevronRightFilled } from "react-icons/tb";
 
-
+ 
 const MapCard = ({ options, title }) => {
   return (
     <div className="h-[280px]  border-2 rounded-tr-[40px] rounded-bl-[40px] border-white-main p-6 m-auto">
