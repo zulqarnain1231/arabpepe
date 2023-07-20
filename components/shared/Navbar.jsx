@@ -8,7 +8,7 @@ import { RxCross1 } from "react-icons/rx";
 import FilledButton from "./Buttons/FilledButton";
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState < boolean > false;
+  const [isOpen, setIsOpen] = useState(false);
   const toggleDrawer = () => {
     setIsOpen((prevvalue) => !prevvalue);
   };

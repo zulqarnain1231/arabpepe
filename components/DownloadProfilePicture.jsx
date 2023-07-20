@@ -10,7 +10,7 @@ const DownloadProfilePicture = () => {
       <div className="w-full flex flex-col items-center justify-start gap-10">
         <Heading text="Download your new profile pictures :)" />
         <div className="w-full flex md:flex-row flex-col items-center justify-center gap-8">
-          {Data.downloadProfilePics.pics.map((item: any, index: number) => {
+          {Data.downloadProfilePics.pics.map((item, index) => {
             return (
               <Link
                 key={index}
