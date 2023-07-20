@@ -1,7 +1,7 @@
 import React from "react";
 import Text from "../shared/Typography/Text";
 import FilledButton from "../shared/Buttons/FilledButton";
-
+ 
 
 
 const TaxCard = ({ title, amount }) => {
