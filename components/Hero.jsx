@@ -28,7 +28,7 @@ const Hero = () => {
           </div>
         </div>
         <div className="w-full flex items-center justify-center">
-        <div className="relative md:h-[500px] sm:w-[500px] w-full  h-[400px] ">
+        <div className="relative md:h-[500px] sm:w-[500px] w-[400px]  h-[400px] ">
           <Image
             className="h-full w-full bounce"
             src={"/Assets/hero.png"}

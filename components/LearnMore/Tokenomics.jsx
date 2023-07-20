@@ -21,7 +21,7 @@ const Tokenomics = () => {
             <TbSquareRoundedChevronRightFilled className="text-white-main h-[24px] w-[24px]" />
             <Text text={`${item.title}:`} style="text-brand-main font-[500]" />
             {item.link ? (
-              <div className="flex items-center justify-center gap-2">
+              <div className="flex items-center justify-start gap-2">
                 <a className="text-white-main font-[400]" href={item.link}>
                   {item.text}
                 </a>

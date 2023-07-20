@@ -62,7 +62,7 @@ const HowToPay = () => {
   return (
     <Wrapper id="howToPay" style="py-16 min-h-[100vh]">
       <div className="w-full flex flex-col items-center justify-start gap-10">
-        <Heading text="How to Buy $APEPE Token" />
+        <Heading text="How to Buy $APEPE Token" style={"text-center"} />
         <div className="w-full grid lg:grid-cols-2 gap-8 md:gap-2 lg:gap-8">
           {/* buttons here */}
           <div className="w-full flex flex-col items-start justify-start gap-4">
