@@ -1,27 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.backgroundGradient {
+    background: rgb(2, 1, 7);
+    background: linear-gradient(159deg, rgba(2, 1, 7, 1) 0%, rgba(42, 6, 94, 1) 33%);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.backgroundGradientLeftToRight {
+    background: rgb(2, 1, 7);
+    background: linear-gradient(327deg, rgba(2, 1, 7, 1) 7%, rgba(42, 6, 94, 1) 51%);
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.bg_gradient {
+    background: rgb(199, 18, 127);
+    background: linear-gradient(159deg, rgba(199, 18, 127, 1) 0%, rgba(42, 6, 94, 1) 95%);
+}
+
+.bg_gradient:hover {
+    background: rgb(42, 6, 94);
+    background: linear-gradient(159deg, rgba(42, 6, 94, 1) 0%, rgba(199, 18, 127, 1) 95%);
+}
+
+canvas {
+    width: 100%;
+    height: 400px;
+}
+
+.outlinedText {
+    font-size: 40px;
+    font-weight: 700;
+    position: relative;
+    color: transparent;
+    -webkit-text-stroke: 2px white;
+    background-clip: text;
+    -webkit-background-clip: text;
+
+}
+
+.outlinedText::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: rgb(226, 150, 163);
+    width: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.outlinedText:hover::after {
+
+    animation: fillText 0.5s linear both;
+}
+
+
+@keyframes fillText {
+    to {
+        width: 100%;
+    }
+}
+
+.bounce {
+    animation: animate 2s infinite ease alternate;
+
+}
+
+@keyframes animate {
+    to {
+        transform: translateY(20px);
+    }
+}
+
+@media (max-width:600px) {
+    .outlinedText {
+        font-size: 28px;
+    }
+
 }
