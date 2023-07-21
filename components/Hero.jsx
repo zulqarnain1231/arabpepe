@@ -7,7 +7,7 @@ import OutlinedButton from "./shared/Buttons/OutlinedButton";
 const Hero = () => {
   return (
     <Wrapper id="hero" style="min-h-[100vh]">
-      <div className="w-full flex flex-col-reverse items-center justify-start lg:grid lg:grid-cols-2 gap-10 py-8">
+      <div className="w-full flex flex-col-reverse items-center justify-start lg:grid lg:grid-cols-2 gap-10 lg:py-8">
         <div className="h-full w-full flex flex-col lg:items-start items-center justify-center gap-8">
           <h1 className="md:text-[50px] sm:text-[46px] bg-gradient-to-r from-white-main to-brand-main inline-block bg-clip-text text-transparent lg:text-left text-center text-[40px] font-[600] uppercase ">
             Welcome to ArabPepe  CryptoVerse!

@@ -10,7 +10,7 @@ const StepCard = ({ step, text }) => {
           Step{step}
         </p>
       </div>
-      <p className="font-[400] text-white-main sm:text-[24px] text-[20px]">
+      <p className="font-[400] text-white-main sm:text-[24px] text-[16px]">
         {text}
       </p>
     </div>

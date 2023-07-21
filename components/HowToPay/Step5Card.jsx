@@ -11,13 +11,13 @@ const Step5Card = () => {
         </p>
       </div>
 
-      <p className="font-[400] text-white-main sm:text-[24px] text-[20px]">
+      <p className="font-[400] text-white-main sm:text-[24px] text-[16px]">
         Once your wallet is connected, select the token swap feature on
         PancakeSwap. In the "From" field, choose BNB as the currency to swap. In
         the "To" field, paste the $APEPE contract address:{" "}
         <a
           href="https://bscscan.com/address/0x463464927671a2e8d406A1a3E64093D42a181C44"
-          className="font-[400] text-[20px] sm:text-[24px] text-brand-main"
+          className="font-[400] text-[14px] sm:text-[24px] text-brand-main"
         >
          0x463464927671a2e8d406A1a3E64093D42a181C44.
         </a><br/>

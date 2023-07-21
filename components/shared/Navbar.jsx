@@ -22,12 +22,20 @@ const Navbar = () => {
       route: "/",
     },
     {
-      name: "Contact",
-      route: "#contact",
-    },
-    {
       name: "RoadMap",
       route: "#roadMap",
+    },
+    {
+      name: "How to Pay",
+      route: "#howToPay",
+    },
+    {
+      name: "Tax",
+      route: "#tax",
+    },
+    {
+      name: "Contact",
+      route: "#contact",
     },
   ];
 
