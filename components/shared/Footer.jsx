@@ -20,8 +20,8 @@ const Footer = () => {
           </div>
         </div>
         <Heading text="Disclaimer" />
-        <p className="font-[400] text-white-main text-[18px] md:text-center text-left">{`$ARABPEPE coin has no association with Matt Furie or his creation Pepe the Frog. This token is simply paying homage to a meme we all love and recognize. $ARABPEPE is a meme coin with no intrinsic value or expectation of financial return. But you could be surprised by our creativity! :> There is no formal team or roadmap. The coin is completely useless and for entertainment purposes only. ** The content on this website is for informational purposes only and does not constitute financial, investment, or other professional advice. Investing in cryptocurrencies carries inherent risks, and you should perform your own research before making any decisions. TurboToadToken and its team members are not responsible for any losses or damages that may occur as a result of using the information provided on this website.`}</p>
-        <p className="font-[400] text-white-main text-[24px] md:text-center text-left">
+        <p className="font-[400] text-white-main text-[18px] text-center">{`$ARABPEPE coin has no association with Matt Furie or his creation Pepe the Frog. This token is simply paying homage to a meme we all love and recognize. $ARABPEPE is a meme coin with no intrinsic value or expectation of financial return. But you could be surprised by our creativity! :> There is no formal team or roadmap. The coin is completely useless and for entertainment purposes only. ** The content on this website is for informational purposes only and does not constitute financial, investment, or other professional advice. Investing in cryptocurrencies carries inherent risks, and you should perform your own research before making any decisions. TurboToadToken and its team members are not responsible for any losses or damages that may occur as a result of using the information provided on this website.`}</p>
+        <p className="font-[400] text-white-main text-[24px] text-center">
           © {year} ArabPepe.com All rights reserved.
         </p>
       </footer>

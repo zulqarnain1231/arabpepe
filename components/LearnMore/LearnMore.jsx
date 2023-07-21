@@ -11,7 +11,7 @@ const LearnMore = () => {
       <div className="w-full h-full grid lg:grid-cols-2 gap-8 md:gap-2 lg:gap-8 overflow-hidden">
         <div className="w-full overflow-hidden">
           <Canvas
-            className="w-full h-[400px]"
+            className="w-full"
             camera={{ position: [5, 5, 5], fov: 25 }}
           >
             <Suspense fallback={null}>

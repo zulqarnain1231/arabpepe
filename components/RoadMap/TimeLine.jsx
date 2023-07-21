@@ -8,35 +8,40 @@ import TimelineDot from "@mui/lab/TimelineDot";
 import { useTheme, useMediaQuery } from "@mui/material";
 import MapCard from "./MapCard";
 import Data from "../../constants/Json/Dummy.json";
- 
+
 const TimeLine = () => {
   const theme = useTheme();
-  const matches = useMediaQuery(theme.breakpoints.up("md"));
+  const matches = useMediaQuery(theme.breakpoints.up("lg"));
+
   return (
     <div className="w-full flex items-center justify-center">
       <Timeline position={matches ? "alternate" : "right"}>
         <TimelineItem className="flex items-center justify-start gap-6">
-          <TimelineSeparator className="md:h-[350px] h-[370px] flex items-start">
+        <TimelineSeparator className="md:h-[350px] sm:h-[420px] h-[480px]">
             <TimelineDot />
             <TimelineConnector className="" />
           </TimelineSeparator>
-          <MapCard
-            title="Phase 1: Token Strategy & Partnerships (Month 1-2)"
-            options={Data.roadMap.phase1}
-          />
+          <TimelineContent>
+            <MapCard
+              title="Phase 1: Token Strategy & Partnerships (Month 1-2)"
+              options={Data.roadMap.phase1}
+            />
+          </TimelineContent>
         </TimelineItem>
         <TimelineItem className="flex items-center justify-start gap-6">
-          <TimelineSeparator className="md:h-[350px] h-[370px]">
+        <TimelineSeparator className="md:h-[350px] sm:h-[420px] h-[480px]">
             <TimelineDot />
             <TimelineConnector className="" />
           </TimelineSeparator>
-          <MapCard
-            title="Phase 2: Digital Presence & Listings (Month 1-2)"
-            options={Data.roadMap.phase2}
-          />
+          <TimelineContent>
+            <MapCard
+              title="Phase 2: Digital Presence & Listings (Month 1-2)"
+              options={Data.roadMap.phase2}
+            />
+          </TimelineContent>
         </TimelineItem>
         <TimelineItem className="flex items-center justify-start gap-6">
-          <TimelineSeparator className="md:h-[350px] h-3720px]">
+          <TimelineSeparator className="md:h-[350px] sm:h-[420px] h-[480px]">
             <TimelineDot />
             <TimelineConnector className="" />
           </TimelineSeparator>
@@ -48,13 +53,16 @@ const TimeLine = () => {
           </TimelineContent>
         </TimelineItem>
         <TimelineItem className="flex items-start justify-start gap-6">
-          <TimelineSeparator>
+        <TimelineSeparator className="md:h-[350px] sm:h-[420px] h-[480px]">
             <TimelineDot />
+            <TimelineConnector className="" />
           </TimelineSeparator>
-          <MapCard
-            title="Phase 4: Exchange Listing & Brand Expansion (Month 3)"
-            options={Data.roadMap.phase4}
-          />
+          <TimelineContent>
+            <MapCard
+              title="Phase 4: Exchange Listing & Brand Expansion (Month 3)"
+              options={Data.roadMap.phase4}
+            />
+          </TimelineContent>
         </TimelineItem>
       </Timeline>
     </div>
